@@ -307,5 +307,265 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-v4020-Regular.woff2") format("woff2"), url("../fonts/Raleway-v4020-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-v4020-Light.woff2") format("woff2"), url("../fonts/Raleway-v4020-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-v4020-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-v4020-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-v4020-Bold.woff2") format("woff2"), url("../fonts/Raleway-v4020-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #fafafa;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.main {
+  z-index: 1;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.page-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-header__logo-header {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.page-nav__toggle {
+  width: 90px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444;
+  border: none;
+  pointer-events: initial;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.76), 0 3px 6px rgba(0, 0, 0, 0.83);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.76), 0 3px 6px rgba(0, 0, 0, 0.83);
+  position: relative;
+  z-index: 2;
+}
+.page-nav__svg {
+  fill: #b8d053;
+}
+.page-nav__svg--hidden {
+  display: none;
+}
+.page-nav__list {
+  display: none;
+}
+.intro {
+  background-image: url("../img/index-intro-bg_mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 50%;
+  background-size: cover;
+  min-height: 462px;
+  padding: 30px 20px;
+  position: relative;
+}
+.intro__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 280px;
+  color: #fff;
+}
+.intro__description {
+  color: #fff;
+  line-height: 24px;
+  margin-top: 10px;
+  max-width: 280px;
+}
+.intro__button {
+  width: 260px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #ff424a;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.intro__more-link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.production__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.production__title {
+  font-size: 24px;
+  max-width: 140px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30p;
+}
+.production__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.production__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 60px;
+  border-radius: 0 0 10px 10px;
+}
+.production__item .image {
+  background-color: #444444;
+  width: 280px;
+  height: 240px;
+  position: relative;
+}
+.production__item .image img {
+  position: absolute;
+  bottom: -22px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+.production__item::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #000;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  will-change: filter;
+}
+.production .description {
+  padding-left: 20px;
+}
+.production__name {
+  color: #b8d053;
+  max-width: 260px;
+  margin-top: 30px;
+}
+.production__button {
+  border: none;
+  width: 240px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #b8d053;
+  font-size: 18px;
+  font-weight: 600;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+}
+.production__button::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgba(184, 208, 83, 0.5);
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  will-change: filter;
+}
 
 /*# sourceMappingURL=style.css.map */

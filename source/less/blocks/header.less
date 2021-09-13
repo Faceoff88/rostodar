@@ -1,0 +1,39 @@
+.page-header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-header {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+.page-nav {
+    &__toggle {
+        width: 90px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #444;
+        border: none;
+        pointer-events: initial;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.76), 0 3px 6px rgba(0,0,0,0.83);
+        position: relative;
+        z-index: 2;
+    }
+
+    &__svg {
+        fill: @greencolor;
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: none;
+    }
+}
