@@ -1,0 +1,99 @@
+.production {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__title {
+        font-size: 24px;
+        max-width: 140px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30p;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 60px;
+        border-radius: 0 0 10px 10px;
+
+        .image {
+            background-color: @dark-greycolor;
+            width: 280px;
+            height: 240px;
+            position: relative;
+            img {
+                position: absolute;
+                bottom: -22px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #000;
+            filter: blur(15px);
+            will-change: filter;
+        }
+    }
+
+    .description {
+        padding-left: 20px;
+    }
+
+    &__name {
+        color: @greencolor;
+        max-width: 260px;
+        margin-top: 30px;
+    }
+
+    &__button {
+        border: none;
+        width: 240px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: #fff;
+        background-color: @greencolor;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 30px;
+            border-radius: 100%;
+            background-color: rgba(@greencolor, 0.5);
+            filter: blur(15px);
+            will-change: filter;
+        }
+    }
+}
