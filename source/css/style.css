@@ -588,7 +588,7 @@ ul {
   position: relative;
 }
 .plants::before {
-  content: url(../../img/spinach.png);
+  content: url("../img/spinach.png");
   position: absolute;
   right: 0;
   top: 50%;
