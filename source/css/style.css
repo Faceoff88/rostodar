@@ -638,7 +638,7 @@ ul {
   position: relative;
 }
 .soil::before {
-  content: url(../../img/soil.png);
+  content: url("../img/soil.png");
   position: absolute;
   left: -200px;
   top: 50%;
@@ -687,7 +687,7 @@ ul {
   position: relative;
 }
 .animals::before {
-  content: url(../../img/food.png);
+  content: url("../img/food.png");
   position: absolute;
   right: 0;
   top: 50%;
@@ -795,7 +795,7 @@ ul {
   content: '';
   width: 90%;
   height: 200px;
-  background-image: url(../../img/logo-dark.png);
+  background-image: url("../img/logo-dark.png");
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: contain;
@@ -820,7 +820,7 @@ ul {
   font-weight: 600;
 }
 .outcome__item::before {
-  content: url(../../img/logo-dots.png);
+  content: url("../img/logo-dots.png");
   width: 35px;
   height: auto;
   position: absolute;
