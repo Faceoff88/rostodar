@@ -1,0 +1,114 @@
+.analisys {
+    &__title {
+        text-align: center;
+        color: @dark-greycolor;
+        max-width: 280px;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: @greycolor;
+        max-width: 180px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__table {
+        margin: 0 auto;
+        color: @dark-greycolor;
+        thead {
+            text-align: left;
+        }
+
+        tbody {
+            tr:first-child {
+                th {
+                    text-align: left;
+                    font-weight: 600!important;
+                    padding-top: 30px;
+                    padding-bottom: 15px;
+                    color: @redcolor;
+                }
+            }
+
+            &:nth-child(5) {
+                tr {
+                    vertical-align: top;
+                }
+                .one-year {
+                    display: inline-block;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+                .two-year {
+                    display: inline-block;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                .three-year {
+                    display: inline-block;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &__rostodar {
+        font-weight: 700;
+        text-align: right;
+        color: @greencolor;
+    }
+}
+
+.outcome {
+    position: relative;
+    background-color: @dark-greycolor;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+
+    &::before {
+        content: '';
+        width: 90%;
+        height: 200px;
+        background-image: url(../../img/logo-dark.png);
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    &__title {
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    &__item {
+        margin-left: 45px;
+        position: relative;
+        margin-bottom: 20px;
+        max-width: 240px;
+        color: #fff;
+        font-weight: 600;
+
+        &::before {
+            content: url(../../img/logo-dots.png);
+            width: 35px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: -45px;
+            transform: translateY(-85%);
+        }
+    }
+}

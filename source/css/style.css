@@ -362,6 +362,11 @@ ul {
   list-style: none;
   padding: 0;
 }
+* {
+  font-variant-numeric: lining-nums;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
 .page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,7 +425,7 @@ ul {
   max-width: 280px;
   color: #fff;
 }
-.intro__description {
+.intro__subtitle {
   color: #fff;
   line-height: 24px;
   margin-top: 10px;
@@ -474,7 +479,8 @@ ul {
   max-width: 140px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30p;
+  margin-bottom: 30px;
+  color: #444444;
 }
 .production__list {
   list-style: none;
@@ -566,6 +572,262 @@ ul {
   -webkit-filter: blur(15px);
           filter: blur(15px);
   will-change: filter;
+}
+.advantages__title {
+  font-size: 24px;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #444444;
+}
+.advantages__title span {
+  text-transform: uppercase;
+}
+.plants {
+  position: relative;
+}
+.plants::before {
+  content: url(../../img/spinach.png);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: auto;
+  height: auto;
+}
+.plants__title {
+  color: #ff424a;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.plants__subtitle {
+  text-align: center;
+  color: #444444;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.plants__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.plants__item {
+  max-width: 210px;
+  text-align: center;
+}
+.plants__description {
+  color: #878787;
+  font-weight: 300;
+}
+.soil {
+  position: relative;
+}
+.soil::before {
+  content: url(../../img/soil.png);
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: auto;
+}
+.soil__title {
+  color: #ff424a;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.soil__subtitle {
+  text-align: center;
+  color: #444444;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.soil__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.soil__item {
+  max-width: 280px;
+  text-align: center;
+}
+.soil__description {
+  color: #878787;
+  font-weight: 300;
+}
+.animals {
+  position: relative;
+}
+.animals::before {
+  content: url(../../img/food.png);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: auto;
+}
+.animals__title {
+  color: #ff424a;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.animals__subtitle {
+  text-align: center;
+  color: #444444;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.animals__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.animals__item {
+  max-width: 280px;
+  text-align: center;
+}
+.animals__description {
+  color: #878787;
+  font-weight: 300;
+}
+.analisys__title {
+  text-align: center;
+  color: #444444;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 24px;
+}
+.analisys__subtitle {
+  text-align: center;
+  color: #878787;
+  max-width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.analisys__table {
+  margin: 0 auto;
+  color: #444444;
+}
+.analisys__table thead {
+  text-align: left;
+}
+.analisys__table tbody tr:first-child th {
+  text-align: left;
+  font-weight: 600!important;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #ff424a;
+}
+.analisys__table tbody:nth-child(5) tr {
+  vertical-align: top;
+}
+.analisys__table tbody:nth-child(5) .one-year {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.analisys__table tbody:nth-child(5) .two-year {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.analisys__table tbody:nth-child(5) .three-year {
+  display: inline-block;
+  font-weight: 700;
+}
+.analisys__rostodar {
+  font-weight: 700;
+  text-align: right;
+  color: #b8d053;
+}
+.outcome {
+  position: relative;
+  background-color: #444444;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+.outcome::before {
+  content: '';
+  width: 90%;
+  height: 200px;
+  background-image: url(../../img/logo-dark.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.outcome__title {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+}
+.outcome__item {
+  margin-left: 45px;
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 240px;
+  color: #fff;
+  font-weight: 600;
+}
+.outcome__item::before {
+  content: url(../../img/logo-dots.png);
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  -webkit-transform: translateY(-85%);
+          transform: translateY(-85%);
 }
 
 /*# sourceMappingURL=style.css.map */
