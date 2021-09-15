@@ -28,21 +28,24 @@
 
     &__svg {
         fill: @greencolor;
-        &--hidden {
-            display: none;
+        display: none;
+
+        &--cross {
+            fill: @redcolor;
         }
     }
 
     &__wrapper {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -240px;
         z-index: 2;
         width: 240px;
         height: 100vh;
         background-color: @dark-greycolor;
         box-shadow: 0 3px 6px rgba(@greencolor,0.76), 0 3px 6px rgba(@greencolor,0.83);
         padding-top: 30px;
+        transition: ease-in-out 0.7s;
     }
 
     &__contacts {
@@ -87,10 +90,8 @@
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 18px;
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: #fff;
+        &:hover, &:focus {
+            background-color: #ffffff;
         }
     }
 
@@ -103,4 +104,13 @@
         font-weight: 600;
         color: @greencolor;
     }
+}
+
+.page-nav__wrapper--show {
+    left: 0;
+    transition: ease-in-out 0.7s;
+}
+
+.svg-show {
+    display: block;
 }
