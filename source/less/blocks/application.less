@@ -1,0 +1,114 @@
+.application {
+    background-image: url('../img/traktor-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-bottom: 375px;
+    &__title {
+        color: @dark-greycolor;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: @greycolor;
+        text-align: center;
+        max-width: 360px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+.variants {
+    margin-top: 40px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 30px;
+        ol::after {
+            content: 'Вариант 1';
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: @redcolor;
+            background-color: #fafafa;
+            position: absolute;
+            top: -8px;
+            left: 30px;
+            width: 110px;
+            height: 20px;
+        }
+
+        &--two {
+            ol::after{
+                content: 'Вариант 2';
+            }
+        }
+
+        ol::before {
+            content: '';
+            width: 215px;
+            height: 45px;
+            background-image: url('../img/dekor-trg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            position: absolute;
+            bottom: 130px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    ol {
+        border: 2px solid @greencolor;
+        width: 200px;
+        padding: 40px 30px;
+        border-radius: 15px;
+        margin-bottom: 60px;
+
+        li {
+            margin-bottom: 20px;
+            color: @dark-greycolor;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                color: @greencolor;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.result {
+    margin-left: 35px;
+    &__reduction {
+        color: @dark-greycolor;
+        span {
+            display: inline-block;
+            color: @redcolor;
+            margin-top: 5px;
+            font-weight: 700;
+        }
+    }
+
+    &__increase {
+        color: @greencolor;
+        font-weight: 700;
+
+        span {
+            font-size: 21px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    }
+}

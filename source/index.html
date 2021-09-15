@@ -42,13 +42,20 @@
                       </path>
                     </svg>
                   </button>
-                  <ul class="nav-list page-nav__list nav-list--show">
-                      <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
-                      <li class="nav-list__item"><a href="#" class="nav-list__link">О нас</a></li>
-                      <li class="nav-list__item"><a href="#" class="nav-list__link">Продукция</a></li>
-                      <li class="nav-list__item"><a href="#" class="nav-list__link">Информация</a></li>
-                      <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-                  </ul>
+                  <div class="page-nav__wrapper page-nav__wrapper--show">
+                        <ul class="nav-list page-nav__list">
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Продукция</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Информация</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                        <ul class="contacts__list page-nav__contacts">
+                            <li class="contacts__item"><a href="#" class="contacts__callback">Заказать звонок  </a></li>
+                            <li class="contacts__item"><a href="tel:+79775021101" class="contacts__phonelink">8 (977) <span>502-11-01</span></a></li>
+                            <li class="contacts__item"><a href="tel:+79647972886" class="contacts__phonelink">8 (964) <span>797-28-86</span></a></li>
+                        </ul>
+                  </div>
             </nav>
         </div>
     </header>
@@ -256,24 +263,24 @@
                     </div>
                     <div class="analisys__why why">
                         <h3 class="why__title">За счет чего?</h3>
-                        <why__list>
+                        <ul class="why__list">
                             <li class="why__item">
-                                <img src="img/unical.png" alt="Уникальная технология" class="why__image">
+                                <img width="120" height="120" src="img/unical.png" alt="Уникальная технология" class="why__image">
                                 <p class="why__description">Уникальная запатентованная технология перевода биологически-активных веществ низинного торфа в <span>100% натуральный</span> органический препарат</p>
                             </li>
                             <li class="why__item">
-                                <img src="img/concentration.png" alt="Максимальная концентрация" class="why__image">
+                                <img width="120" height="120" src="img/concentration.png" alt="Максимальная концентрация" class="why__image">
                                 <p class="why__description">Образование гуминовых веществ в процессе производства идет в вакууме и при температуре не выше 60 градусов, <span>концентрация</span> гуминовых веществ <span>максимальна</span></p>
                             </li>
                             <li class="why__item">
-                                <img src="img/elements.png" alt="макро и микро элементы" class="why__image">
+                                <img width="120" height="120" src="img/elements.png" alt="макро и микро элементы" class="why__image">
                                 <p class="why__description">Препарат содержит <span>32 микро и макро элементов</span> в подвижной и усваеваемой форме. <span>11 витаминов и 20 аминокислот</span></p>
                             </li>
                             <li class="why__item">
-                                <img src="img/proof.png" alt="Доказано" class="why__image">
-                                <p class="why__description"><span>Научно-практическая доказанность действия препарата на растения и почву</span></p>
+                                <img width="120" height="120" src="img/proof.png" alt="Доказано" class="why__image">
+                                <p class="why__description"><span>Научно-практическая доказанность</span> действия препарата на растения и почву</p>
                             </li>
-                        </why__list>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -285,20 +292,20 @@
                         <ul class="variants__list">
                             <li class="variants__item variants__item--one">
                                 <ol>
-                                    <li>Обработка почвы – <span>3-5 л/Га</span></li>
+                                    <li>Обработка<br>почвы – <span>3-5 л/Га</span></li>
                                     <li>Протравка семенного материала - <span>0.5 л/т</span></li>
                                     <li>Первая обработка по вегетации - <span>1 л/Га</span></li>
                                     <li>Вторая обработка по вегетации - <span>1 л/Га</span></li>
                                     <li>Третья обработка по вегетации - <span>1 л/Га</span></li>
                                 </ol>
                                 <div class="variants__result result">
-                                    <p class="result__reduction">Сокращение: <span>NPK - 20%, СЗР - 20%</span></p>
-                                    <p class="result__increase">Повышение урожайности: от 15%</p>
+                                    <p class="result__reduction">Сокращение:<br><span>NPK - 20%, СЗР - 20%</span></p>
+                                    <p class="result__increase">Повышение урожайности:<br><span>от 15%</span></p>
                                 </div>
                             </li>
                             <li class="variants__item variants__item--two">
                                 <ol>
-                                    <li>Обработка почвы – <span>3-5 л/Га</span></li>
+                                    <li>Обработка<br>почвы – <span>3-5 л/Га</span></li>
                                     <li>Протравка семенного материала - <span>0.5 л/т</span></li>
                                     <li>Первая обработка по вегетации - <span>1 л/Га</span></li>
                                     <li>Вторая обработка по вегетации - <span>1 л/Га</span></li>
@@ -306,8 +313,8 @@
                                     <li>Четвертая обработка по вегетации - <span>1 л/Га</span></li>
                                 </ol>
                                 <div class="variants__result result">
-                                    <p class="result__reduction">Сокращение: <span>NPK - 50%, СЗР - 50%</span></p>
-                                    <p class="result__increase">Повышение урожайности: от 20%</p>
+                                    <p class="result__reduction">Сокращение:<br><span>NPK - 50%, СЗР - 50%</span></p>
+                                    <p class="result__increase">Повышение урожайности:<br><span>от 20%</span></p>
                                 </div>
                             </li>
                         </ul>
@@ -318,7 +325,7 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
-            <img src="img/logo-white.png" alt="Логотип" height="30" class="footer-logo">
+            <img src="img/logo-white.png" alt="Логотип" height="50" class="footer__logo">
             <div class="footer__contacts contacts">
                 <div class="contacts__phone">
                     <p>Телефон</p>
