@@ -401,14 +401,15 @@ ul {
 }
 .page-nav__svg {
   fill: #b8d053;
-}
-.page-nav__svg--hidden {
   display: none;
+}
+.page-nav__svg--cross {
+  fill: #ff424a;
 }
 .page-nav__wrapper {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -240px;
   z-index: 2;
   width: 240px;
   height: 100vh;
@@ -416,6 +417,8 @@ ul {
   -webkit-box-shadow: 0 3px 6px rgba(184, 208, 83, 0.76), 0 3px 6px rgba(184, 208, 83, 0.83);
           box-shadow: 0 3px 6px rgba(184, 208, 83, 0.76), 0 3px 6px rgba(184, 208, 83, 0.83);
   padding-top: 30px;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
 }
 .page-nav__contacts {
   margin-top: 10px;
@@ -463,9 +466,8 @@ ul {
   font-size: 18px;
 }
 .nav-list__item:hover,
-.nav-list__item:focus,
-.nav-list__item:active {
-  background-color: #fff;
+.nav-list__item:focus {
+  background-color: #ffffff;
 }
 .nav-list__link {
   display: block;
@@ -475,6 +477,14 @@ ul {
   text-transform: uppercase;
   font-weight: 600;
   color: #b8d053;
+}
+.page-nav__wrapper--show {
+  left: 0;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+}
+.svg-show {
+  display: block;
 }
 .intro {
   background-image: url("../img/index-intro-bg_mobile.png");
