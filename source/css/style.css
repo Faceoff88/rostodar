@@ -1013,7 +1013,7 @@ ul {
   font-weight: 600;
 }
 .outcome__item::before {
-  content: url(../../img/logo-dots.png);
+  content: url("../img/logo-dots.png");
   width: 35px;
   height: auto;
   position: absolute;
