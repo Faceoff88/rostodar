@@ -1230,7 +1230,7 @@ ul {
   display: block;
   margin: 0 auto;
 }
-.contacts {
+.footer__contacts {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1241,7 +1241,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.contacts__phone {
+.footer__contacts .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1252,21 +1252,21 @@ ul {
   margin-bottom: 20px;
   width: 160px;
 }
-.contacts__phone p {
+.footer__contacts .phone p {
   font-size: 16px;
   color: #b8d053;
   font-weight: 600;
   margin: 0;
   margin-bottom: 10px;
 }
-.contacts__phone a {
+.footer__contacts .phone a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
 }
-.contacts__email {
+.footer__contacts .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1276,34 +1276,57 @@ ul {
           flex-direction: column;
   width: 160px;
 }
-.contacts__email p {
+.footer__contacts .email p {
   font-size: 16px;
   color: #b8d053;
   font-weight: 600;
   margin: 0;
   margin-bottom: 10px;
 }
-.contacts__email a {
+.footer__contacts .email a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
 }
-.contacts__social {
+.footer__contacts .phone a,
+.footer__contacts .email a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+.footer__contacts .phone a:hover,
+.footer__contacts .email a:hover,
+.footer__contacts .phone a:focus,
+.footer__contacts .email a:focus {
+  color: #b8d053;
+}
+.footer__contacts .phone a:active,
+.footer__contacts .email a:active {
+  color: #b0cb3f;
+}
+.footer__contacts .social {
   margin-top: 20px;
   width: 160px;
   text-align: center;
 }
-.contacts__social .vk {
+.footer__contacts .social svg {
+  fill: #b8d053;
+}
+.footer__contacts .social svg:hover,
+.footer__contacts .social svg:focus {
+  fill: #fff;
+}
+.footer__contacts .social svg:active {
+  fill: #f2f2f2;
+}
+.footer__contacts .social svg:first-child {
   margin-right: 10px;
 }
-.contacts__social img {
-  width: 30px;
-  height: 30px;
-}
-.contacts__social a {
+.footer__contacts .social a {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
 }
 .udobrenie-card .production__button,
 .topdressing-card .production__button,
