@@ -185,12 +185,6 @@
     }
 }
 
-.page-nav__wrapper--show {
-    left: 0;
-    transition: ease-in-out 0.7s;
-    position: fixed;
-}
-
 .svg-show {
     display: block;
 }
@@ -247,4 +241,35 @@
     top: 0;
     z-index: 2;
     display: block;
+}
+
+@media (min-width: @tablet-width) {
+    .page-header {
+        //height: 110px;
+        &__logo-header {
+            margin-top: 35px;
+            img {
+                width: auto;
+                height: 40px;
+            }
+        }
+    }
+
+    .page-nav {
+        &__toggle {
+            width: 155px;
+            height: 110px;
+        }
+
+        &__wrapper {
+            width: 300px;
+            left: -305px;
+        }
+    }
+}
+
+.page-nav__wrapper--show {
+    left: 0;
+    transition: ease-in-out 0.7s;
+    position: fixed;
 }
