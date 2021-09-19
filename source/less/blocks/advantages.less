@@ -93,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        clear: both;
     }
 
     &__item {
@@ -112,7 +113,7 @@
     &::before {
         content: url("../img/food.png");
         position: absolute;
-        right: 0;
+        right: -200px;
         top: 50%;
         transform: translateY(-50%);
         width: auto;
@@ -198,17 +199,34 @@
     .soil {
         margin-top: 50px;
         
-        &__title,
-        &__subtitle {
+        &__title {
             text-align: right;
         }
 
         &__subtitle {
-            padding: 0;
+            float: right;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        &::before {
+            top: 30px;
         }
     }
 
     .animals {
         margin-top: 50px;
+        
+        &::before {
+            top: 60px;
+        }
+    }
+
+    .plants,
+    .soil,
+    .animals {
+        &__list {
+            align-items: start;
+        }
     }
 }

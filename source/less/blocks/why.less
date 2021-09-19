@@ -1,20 +1,20 @@
 .why {
     position: relative;
-    overflow: hidden;
 
     &::before {
-        content: url("../img/dekor-kv.png");
+        content: url("../img/dekor-kv-full.svg");
         position: absolute;
-        top: 200px;
+        top: 250px;
+        left: -250px;
         z-index: -1;
     }
 
     &::after {
-        content: url("../img/dekor-kv.png");
+        content: url("../img/dekor-kv-full.svg");
         position: absolute;
         top: 600px;
-        right: 0;
-        transform: rotate(180deg);
+        right: -150px;
+        transform: rotate(135deg);
         z-index: -1;
     }
 
@@ -31,14 +31,14 @@
         justify-content: center;
         margin-top: 40px;
     }
-
+    
     &__item {
         width: 240px;
         height: 290px;
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         margin-bottom: 40px;
         border-radius: 15px;
@@ -47,10 +47,10 @@
         background-color: #fff;
 
         &::before {
-            content: url("../img/list--one.png");
+            content: url("../img/list--one.svg");
             width: 270px;
             position: absolute;
-            z-index: -1;
+            z-index: -2;
         }
 
         &:first-child::before {
@@ -70,8 +70,8 @@
         }
 
         &:nth-child(4)::before {
-            top: -100px;
-            left: 200px;
+            top: -150px;
+            left: 220px;
         }
     }
 
@@ -82,6 +82,53 @@
 
         span {
             color: @greencolor;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .why {
+        &::before {
+            transform: rotate(45deg);
+            left: -205px;
+        }
+
+        &::after {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            right: -205px;
+        }
+
+        &__item {
+            margin-bottom: 50px;
+            &:first-child {
+                margin-right: 50px;
+
+                &::before {
+                    top: -140px;
+                    left: -100px;
+                }
+            }
+
+            &:nth-child(2)::before {
+                left: 100px;
+                top: -140px;
+            }
+
+            &:nth-child(3) {
+                margin-right: 50px;
+
+                &::before {
+                    top: 225px;
+                    left: -200px;
+                    transform: scaleX(-1);
+                }
+            }
+
+            &:nth-child(4)::before {
+                top: 225px;
+                left: 200px;
+            }
         }
     }
 }
