@@ -357,6 +357,7 @@ body {
 }
 .main {
   z-index: 1;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -963,6 +964,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  clear: both;
 }
 .soil__item {
   max-width: 280px;
@@ -978,7 +980,7 @@ ul {
 .animals::before {
   content: url("../img/food.png");
   position: absolute;
-  right: 0;
+  right: -200px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1061,15 +1063,29 @@ ul {
   .soil {
     margin-top: 50px;
   }
-  .soil__title,
-  .soil__subtitle {
+  .soil__title {
     text-align: right;
   }
   .soil__subtitle {
-    padding: 0;
+    float: right;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .soil::before {
+    top: 30px;
   }
   .animals {
     margin-top: 50px;
+  }
+  .animals::before {
+    top: 60px;
+  }
+  .plants__list,
+  .soil__list,
+  .animals__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .analisys__title {
@@ -1135,9 +1151,9 @@ ul {
   content: '';
   width: 90%;
   height: 200px;
-  background-image: url("../img/logo-dark.png");
+  background-image: url("../img/logo-dark.svg");
   background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-position: 50% 100%;
   background-size: contain;
   position: absolute;
   bottom: 0;
@@ -1160,32 +1176,93 @@ ul {
   font-weight: 600;
 }
 .outcome__item::before {
-  content: url("../img/logo-dots.png");
+  content: url("../img/logo-dots.svg");
   width: 35px;
   height: auto;
   position: absolute;
   top: 50%;
   left: -45px;
-  -webkit-transform: translateY(-85%);
-          transform: translateY(-85%);
+  -webkit-transform: translateY(-82%);
+          transform: translateY(-82%);
+}
+@media (min-width: 660px) {
+  .analisys__title {
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 40px;
+    max-width: 380px;
+    line-height: 50px;
+  }
+  .analisys__subtitle {
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 18px;
+    max-width: 210px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 28px;
+  }
+  .analisys__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .analisys__table {
+    margin: 0;
+    padding: 20px;
+    width: 50%;
+  }
+  .analisys__outcome {
+    min-width: 50%;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .analisys__outcome::after {
+    content: '';
+    width: 100%;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    z-index: -1;
+  }
 }
 .why {
   position: relative;
-  overflow: hidden;
 }
 .why::before {
-  content: url("../img/dekor-kv.png");
+  content: url("../img/dekor-kv-full.svg");
   position: absolute;
-  top: 200px;
+  top: 250px;
+  left: -250px;
   z-index: -1;
 }
 .why::after {
-  content: url("../img/dekor-kv.png");
+  content: url("../img/dekor-kv-full.svg");
   position: absolute;
   top: 600px;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  right: -150px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   z-index: -1;
 }
 .why__title {
@@ -1217,9 +1294,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1230,10 +1307,10 @@ ul {
   background-color: #fff;
 }
 .why__item::before {
-  content: url("../img/list--one.png");
+  content: url("../img/list--one.svg");
   width: 270px;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 .why__item:first-child::before {
   top: -120px;
@@ -1250,8 +1327,8 @@ ul {
   left: -80px;
 }
 .why__item:nth-child(4)::before {
-  top: -100px;
-  left: 200px;
+  top: -150px;
+  left: 220px;
 }
 .why__description {
   text-align: center;
@@ -1260,6 +1337,46 @@ ul {
 }
 .why__description span {
   color: #b8d053;
+}
+@media (min-width: 660px) {
+  .why::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    left: -205px;
+  }
+  .why::after {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    right: -205px;
+  }
+  .why__item {
+    margin-bottom: 50px;
+  }
+  .why__item:first-child {
+    margin-right: 50px;
+  }
+  .why__item:first-child::before {
+    top: -140px;
+    left: -100px;
+  }
+  .why__item:nth-child(2)::before {
+    left: 100px;
+    top: -140px;
+  }
+  .why__item:nth-child(3) {
+    margin-right: 50px;
+  }
+  .why__item:nth-child(3)::before {
+    top: 225px;
+    left: -200px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .why__item:nth-child(4)::before {
+    top: 225px;
+    left: 200px;
+  }
 }
 .application {
   background-image: url('../img/traktor-mobile.png');
@@ -1318,7 +1435,7 @@ ul {
   content: '';
   width: 215px;
   height: 45px;
-  background-image: url('../img/dekor-trg.png');
+  background-image: url('../img/dekor-trg.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1366,6 +1483,33 @@ ul {
   font-size: 21px;
   display: inline-block;
   margin-top: 5px;
+}
+@media (min-width: 660px) {
+  .application {
+    background-image: url("../img/traktor-tablet.png");
+    padding-bottom: 310px;
+  }
+  .application__title {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .application__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    min-width: 400px;
+  }
+  .application .variants__item--one {
+    margin-right: 60px;
+  }
+  .application .variants__item--one ol::before {
+    bottom: 186px;
+  }
 }
 .footer {
   background-color: #444444;
@@ -1474,6 +1618,35 @@ ul {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
+}
+@media (min-width: 660px) {
+  .footer__contacts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .footer .phone,
+  .footer .email {
+    margin-right: 100px;
+  }
+  .footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer .social svg:first-child {
+    margin-bottom: 5px;
+  }
 }
 .udobrenie-card .production__button,
 .topdressing-card .production__button,
