@@ -170,3 +170,38 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .analisys {
+        &__wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 62px;
+            max-width: 570px;
+            margin-left: 0;
+        }
+
+        &__subtitle {
+            margin-left: 0;
+        }
+
+        &__table {
+            padding-left: 0;
+        }
+
+        &__outcome {
+            border-radius: 15px;
+
+            &::after {
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+            }
+        }
+    }
+}

@@ -230,3 +230,74 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .advantages {
+        &__wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 62px;
+        }
+
+        .plants,
+        .soil,
+        .animals {
+            width: 100%;
+            margin-top: 50px;
+            
+            &__title {
+                font-size: 21px;
+                margin-bottom: 20px;
+            }
+
+            &__list {
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+        }
+
+        .plants {
+            &::before {
+                left: 65%;
+            }
+        }
+
+        .soil {
+
+            &__subtitle {
+                margin-bottom: 50px;
+            }
+
+            &::before {
+                content: '';
+                width: 325px;
+                height: 325px;
+                background-image: url("../img/soil.png");
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                top: 70px;
+                left: -300px;
+            }
+        }
+
+        .animals {
+
+            &::before {
+                content: '';
+                width: 325px;
+                height: 325px;
+                background-image: url("../img/food.png");
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                top: 70px;
+                right: -300px;
+            }
+        }
+    }
+}
