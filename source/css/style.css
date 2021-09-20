@@ -612,6 +612,89 @@ ul {
     left: -305px;
   }
 }
+@media (min-width: 1200px) {
+  .page-header {
+    height: 110px;
+  }
+  .page-header .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .page-nav__toggle {
+    display: none;
+  }
+  .page-nav__wrapper {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .page-nav__wrapper::before {
+    content: '';
+    width: calc(100vw - 300px);
+    height: 110px;
+    background-color: #444444;
+    position: absolute;
+    right: calc(-100vw + 300px);
+    top: 0;
+  }
+  .page-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 550px;
+  }
+  .page-nav__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .nav-list {
+    padding-left: 50px;
+    margin-top: 5px;
+  }
+  .nav-list__link {
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .nav-list__link:hover,
+  .nav-list__link:focus {
+    background-color: transparent;
+    color: #fff;
+  }
+}
 .page-nav__wrapper--show {
   left: 0;
   -webkit-transition: ease-in-out 0.7s;
@@ -619,7 +702,7 @@ ul {
   position: fixed;
 }
 .intro {
-  background-image: url("../img/index-intro-bg_mobile.png");
+  background-image: url("../img/soil_health_banner.jpg");
   background-repeat: no-repeat;
   background-position: bottom 0 left 50%;
   background-size: cover;
@@ -686,7 +769,13 @@ ul {
 @media (min-width: 660px) {
   .intro {
     min-height: 619px;
-    background-image: url("../img/index-intro-bg_tablet.png");
+    background-image: url("../img/soil_health_banner.jpg");
+    background-size: cover;
+    background-position: 20% 50%;
+  }
+  .intro__wrapper {
+    max-width: 840px;
+    margin: 0 auto;
   }
   .intro__title {
     font-size: 40px;
@@ -704,6 +793,27 @@ ul {
     -webkit-transform: none;
             transform: none;
     margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro {
+    background-image: url("../img/soil_health_banner.jpg");
+    background-position: 10% 0;
+    background-size: 110%;
+    min-height: calc(100vh - 170px);
+  }
+  .intro__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .intro__title {
+    font-size: 50px;
+    line-height: 62px;
+    max-width: 570px;
+    margin-top: 150px;
+  }
+  .intro__subtitle {
+    max-width: 570px;
   }
 }
 .production__wrapper {
@@ -817,6 +927,17 @@ ul {
     margin-top: 40px;
     margin-left: 20px;
   }
+  .production__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
   .production__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -861,6 +982,59 @@ ul {
   }
   .production__pack {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .production__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .production__title {
+    font-size: 50px;
+    line-height: 62px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .production__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .production__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 280px;
+    height: 500px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 60px;
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .production__item .image {
+    background-color: #444444;
+    width: 280px;
+    height: 240px;
+    position: relative;
+  }
+  .production__item .image img {
+    position: absolute;
+    bottom: -22px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .production__item .description {
+    width: 280px;
+  }
+  .production__button {
+    left: 50%;
   }
 }
 .advantages__title {
@@ -1088,6 +1262,64 @@ ul {
             align-items: start;
   }
 }
+@media (min-width: 1200px) {
+  .advantages__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .advantages__title {
+    font-size: 50px;
+    line-height: 62px;
+  }
+  .advantages .plants,
+  .advantages .soil,
+  .advantages .animals {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .advantages .plants__title,
+  .advantages .soil__title,
+  .advantages .animals__title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .advantages .plants__list,
+  .advantages .soil__list,
+  .advantages .animals__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+  }
+  .advantages .plants::before {
+    left: 65%;
+  }
+  .advantages .soil__subtitle {
+    margin-bottom: 50px;
+  }
+  .advantages .soil::before {
+    content: '';
+    width: 325px;
+    height: 325px;
+    background-image: url("../img/soil.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 70px;
+    left: -300px;
+  }
+  .advantages .animals::before {
+    content: '';
+    width: 325px;
+    height: 325px;
+    background-image: url("../img/food.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 70px;
+    right: -300px;
+  }
+}
 .analisys__title {
   text-align: center;
   color: #444444;
@@ -1246,8 +1478,38 @@ ul {
     z-index: -1;
   }
 }
+@media (min-width: 1200px) {
+  .analisys__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .analisys__title {
+    font-size: 50px;
+    line-height: 62px;
+    max-width: 570px;
+    margin-left: 0;
+  }
+  .analisys__subtitle {
+    margin-left: 0;
+  }
+  .analisys__table {
+    padding-left: 0;
+  }
+  .analisys__outcome {
+    border-radius: 15px;
+  }
+  .analisys__outcome::after {
+    width: 90%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -20px;
+  }
+}
 .why {
   position: relative;
+  max-width: 340px;
+  margin: 0 auto;
 }
 .why::before {
   content: url("../img/dekor-kv-full.svg");
@@ -1339,6 +1601,10 @@ ul {
   color: #b8d053;
 }
 @media (min-width: 660px) {
+  .why {
+    max-width: 860px;
+    margin: 0 auto;
+  }
   .why::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -1376,6 +1642,87 @@ ul {
   .why__item:nth-child(4)::before {
     top: 225px;
     left: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .why {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .why::before {
+    content: '';
+    width: 600px;
+    height: 600px;
+    background-image: url("../img/sprut.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .why::after {
+    content: '';
+    width: 600px;
+    height: 600px;
+    background-image: url("../img/Plant.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    position: absolute;
+    right: -350px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 3;
+  }
+  .why__title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .why__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .why__item {
+    margin-bottom: 50px;
+  }
+  .why__item::before {
+    display: none;
+  }
+  .why__item:first-child::after {
+    content: '';
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/dekor-kv-full.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    z-index: -1;
+  }
+  .why__item:nth-child(2) {
+    margin-left: 100px;
+  }
+  .why__item:nth-child(2)::after {
+    content: '';
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/dekor-kv-full.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    bottom: -200px;
+    left: 100px;
+    z-index: -1;
   }
 }
 .application {
@@ -1493,7 +1840,7 @@ ul {
     text-align: left;
     margin-left: 20px;
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .application__subtitle {
     font-size: 18px;
@@ -1509,6 +1856,47 @@ ul {
   }
   .application .variants__item--one ol::before {
     bottom: 186px;
+  }
+}
+@media (min-width: 1200px) {
+  .application {
+    background-image: url('../img/traktor-desktop.png');
+    background-position: 80% 100%;
+    background-size: 120%;
+    padding-bottom: 700px;
+  }
+  .application__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .application__title {
+    font-size: 50px;
+    line-height: 62px;
+    margin-left: 0;
+  }
+  .application__subtitle {
+    margin-left: 0;
+  }
+  .application .variants {
+    margin-top: 50px;
+  }
+  .application .variants__item--one {
+    margin-right: 150px;
+  }
+  .application .variants__item--two {
+    position: relative;
+  }
+  .application .variants__item--two::before {
+    content: '';
+    background-image: url("../img/spinach-appl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 150px;
+    height: 270px;
+    position: absolute;
+    top: -50px;
+    right: -75px;
   }
 }
 .footer {
@@ -1646,6 +2034,18 @@ ul {
   }
   .footer .social svg:first-child {
     margin-bottom: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .footer__contacts {
+    max-width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .udobrenie-card .production__button,
