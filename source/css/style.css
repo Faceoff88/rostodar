@@ -694,6 +694,20 @@ ul {
     background-color: transparent;
     color: #fff;
   }
+  .subnav {
+    width: 250px;
+    background-color: #444444;
+  }
+  .subnav__link {
+    font-weight: 300;
+  }
+  .subnav--show {
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
 }
 .page-nav__wrapper--show {
   left: 0;
@@ -1885,7 +1899,7 @@ ul {
   }
   .application .variants__item--two::before {
     content: '';
-    background-image: url("../img/spinach-appl.png");
+    background-image: url("../img/spinach-appl.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -2063,7 +2077,7 @@ ul {
   color: #444444;
 }
 .intro-about {
-  background-image: url("../img/header-intro-about-bg-mobile.png");
+  background-image: url("../img/header-intro-about-bg-mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -2119,7 +2133,7 @@ ul {
 }
 @media (min-width: 660px) {
   .intro-about {
-    background-image: url("../img/header-intro-about-bg-tablet.png");
+    background-image: url("../img/header-intro-about-bg-tablet.webp");
     min-height: 619px;
   }
   .intro-about__title {
@@ -2139,7 +2153,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .intro-about {
-    background-image: url("../img/header-intro-about-bg.jpeg");
+    background-image: url("../img/header-intro-about-bg.webp");
     min-height: calc(100vh - 170px);
   }
   .intro-about__title {
@@ -2312,6 +2326,233 @@ ul {
         justify-content: space-around;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
+  }
+}
+.intro-udobrenie {
+  background-image: url("../img/intro-udobrenie-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  height: 500px;
+}
+.intro-udobrenie__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 220px;
+}
+.intro-udobrenie__title {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+@media (min-width: 660px) {
+  .intro-udobrenie {
+    background-image: url("../img/intro-udobrenie-bg-tablet.webp");
+    height: 619px;
+  }
+  .intro-udobrenie__wrapper {
+    padding-top: 250px;
+  }
+  .intro-udobrenie__title {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-udobrenie {
+    background-image: url("../img/intro-udobrenie-bg-desktop.webp");
+    height: calc(100vh - 170px);
+  }
+  .intro-udobrenie__wrapper {
+    padding-top: 350px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .intro-udobrenie__title {
+    font-size: 50px;
+    line-height: 72px;
+    max-width: 640px;
+  }
+}
+.basic-substance__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.basic-substance__text {
+  color: #878787;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.basic-substance__text span {
+  color: #b8d053;
+  font-weight: 600;
+}
+.basic-substance__image {
+  max-width: 100%;
+}
+@media (min-width: 660px) {
+  .basic-substance__text {
+    margin-top: 40px;
+  }
+  .basic-substance__image {
+    float: right;
+    width: 280px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .basic-substance__wrapper {
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.content-elems__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content-elems__text {
+  color: #878787;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.content-elems__text span {
+  color: #b8d053;
+  font-weight: 600;
+}
+.content-elems__image {
+  max-width: 100%;
+}
+@media (min-width: 660px) {
+  .content-elems__image {
+    float: left;
+    max-width: 280px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-elems__wrapper {
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.udobrenie-devs__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.udobrenie-devs__text {
+  color: #878787;
+  line-height: 24px;
+}
+.udobrenie-devs__link {
+  color: #ff424a;
+  text-decoration: none;
+  font-weight: 600;
+}
+.udobrenie-devs__packaging {
+  color: #878787;
+  line-height: 24px;
+}
+@media (min-width: 1200px) {
+  .udobrenie-devs__wrapper {
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.udobrenie-card .fertilizer {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.udobrenie-card .description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 660px) {
+  .udobrenie-card {
+    margin-bottom: 100px;
+  }
+  .udobrenie-card .production__button {
+    top: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .udobrenie-card {
+    clear: both;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .udobrenie-card::before {
+    content: '';
+    width: 450px;
+    height: 450px;
+    background-image: url("../img/basil.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    right: -30px;
+    top: -250px;
+    z-index: 2;
+  }
+  .udobrenie-card .fertilizer {
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .udobrenie-card .production__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 620px;
+    height: 240px;
+  }
+  .udobrenie-card .production__item .image {
+    width: 280px;
+    height: 240px;
+  }
+  .udobrenie-card .production__item .description {
+    width: 350px;
+    -ms-flex-item-align: start;
+        align-self: start;
+  }
+  .udobrenie-card .production__button {
+    position: absolute;
+    left: 72%;
+  }
+  .udobrenie-card .production__name {
+    max-width: 100%;
+  }
+  .udobrenie-card .production__pack h4,
+  .udobrenie-card .production__price h4 {
+    margin: 0;
+  }
+  .udobrenie-card .production__pack p,
+  .udobrenie-card .production__price p {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .udobrenie-card .production__pack {
+    margin-bottom: 20px;
   }
 }
 

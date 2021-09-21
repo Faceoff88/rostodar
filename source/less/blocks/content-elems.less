@@ -1,0 +1,43 @@
+.content-elems {
+    
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__text {
+        color: @greycolor;
+        margin-bottom: 20px;
+        line-height: 24px;
+
+        span {
+            color: @greencolor;
+            font-weight: 600;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .content-elems {
+        &__image {
+            float: left;
+            max-width: 280px;
+            margin-right: 20px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .content-elems {
+        &__wrapper {
+            padding: 0;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    }
+}
