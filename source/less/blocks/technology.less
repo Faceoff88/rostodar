@@ -1,0 +1,50 @@
+.technology {
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: @dark-greycolor;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 170px;
+    }
+
+    &__text {
+        margin: 0;
+        color: @greycolor;
+        line-height: 24px;
+
+        span {
+            color: @greencolor;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .technology {
+        &__title {
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            line-height: 52px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .technology {
+        &__wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 50px;
+            max-width: 360px;
+        }
+    }
+}
