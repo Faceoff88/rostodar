@@ -1,0 +1,33 @@
+.udobrenie-devs {
+    
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__text {
+        color: @greycolor;
+        line-height: 24px;
+    }
+
+    &__link {
+        color: @redcolor;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &__packaging {
+        color: @greycolor;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .udobrenie-devs {
+        &__wrapper {
+            padding: 0;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.basic-substance {
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__text {
+        color: @greycolor;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        line-height: 24px;
+
+        span {
+            color: @greencolor;
+            font-weight: 600;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .basic-substance {
+        
+        &__text {
+            margin-top: 40px;
+        }
+
+        &__image {
+            float: right;
+            width: 280px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .basic-substance {
+        &__wrapper {
+            padding: 0;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    }
+}

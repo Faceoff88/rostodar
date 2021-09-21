@@ -1,0 +1,59 @@
+.intro-udobrenie {
+    background-image: url("../img/intro-udobrenie-bg-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    height: 500px;
+
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 220px;
+    }
+    
+    &__title {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .intro-udobrenie {
+        background-image: url("../img/intro-udobrenie-bg-tablet.webp");
+        height: 619px;
+
+        &__wrapper {
+            padding-top: 250px;
+        }
+        
+        &__title {
+            margin: 0 auto;
+            max-width: 500px;
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .intro-udobrenie {
+        background-image: url("../img/intro-udobrenie-bg-desktop.webp");
+        height: calc(100vh - 170px);
+
+        &__wrapper {
+            padding-top: 350px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 72px;
+            max-width: 640px;
+        }
+    }
+}
