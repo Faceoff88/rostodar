@@ -2399,6 +2399,7 @@ ul {
 @media (min-width: 660px) {
   .basic-substance__text {
     margin-top: 40px;
+    text-align: justify;
   }
   .basic-substance__image {
     float: right;
@@ -2435,6 +2436,9 @@ ul {
     max-width: 280px;
     margin-right: 20px;
     margin-bottom: 100px;
+  }
+  .content-elems__text {
+    text-align: justify;
   }
 }
 @media (min-width: 1200px) {
@@ -2552,6 +2556,202 @@ ul {
     margin-top: 10px;
   }
   .udobrenie-card .production__pack {
+    margin-bottom: 20px;
+  }
+}
+.topdressing-intro {
+  background-image: url("../img/intro-topdressing-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 500px;
+}
+.topdressing-intro__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 220px;
+}
+.topdressing-intro__title {
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 260px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .topdressing-intro {
+    background-image: url("../img/intro-topdressing-bg-tablet.webp");
+    height: 619px;
+  }
+  .topdressing-intro__title {
+    font-size: 40px;
+    line-height: 60px;
+    width: 570px;
+  }
+}
+@media (min-width: 1200px) {
+  .topdressing-intro {
+    background-image: url("../img/intro-topdressing-bg-desktop.webp");
+    height: calc(100vh - 170px);
+  }
+  .topdressing-intro__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 300px;
+  }
+  .topdressing-intro__title {
+    font-size: 50px;
+    line-height: 70px;
+    width: 710px;
+  }
+}
+.topdressing-development__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.topdressing-development__text {
+  color: #878787;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.topdressing-development__image {
+  max-width: 100%;
+}
+@media (min-width: 660px) {
+  .topdressing-development__image {
+    max-width: 280px;
+    float: right;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .topdressing-development__wrapper {
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .topdressing-development__text {
+    text-align: justify;
+    margin-top: 40px;
+  }
+  .topdressing-development__image {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+}
+.topdressing-description__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.topdressing-description__text {
+  margin: 0;
+  color: #878787;
+}
+.topdressing-description__text span {
+  color: #b8d053;
+  font-weight: 600;
+}
+.topdressing-description__text b {
+  color: #444444;
+}
+.topdressing-description__text:nth-child(2) {
+  margin-top: 10px;
+}
+.topdressing-description__text:last-child {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .topdressing-description__wrapper {
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .topdressing-description__text {
+    text-align: justify;
+  }
+}
+.topdressing-card .feeding {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.topdressing-card .description {
+  padding-left: 20px;
+}
+@media (min-width: 660px) {
+  .topdressing-card {
+    margin-bottom: 100px;
+  }
+  .topdressing-card .feeding .production__button {
+    top: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .topdressing-card {
+    clear: both;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .topdressing-card::before {
+    content: '';
+    width: 65px;
+    height: 25%;
+    background-color: #b8d053;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .topdressing-card .feeding {
+    margin: 0;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .topdressing-card .production__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 620px;
+    height: 240px;
+  }
+  .topdressing-card .production__item .image {
+    width: 280px;
+    height: 240px;
+  }
+  .topdressing-card .production__item .description {
+    width: 325px;
+    -ms-flex-item-align: start;
+        align-self: start;
+  }
+  .topdressing-card .production__button {
+    position: absolute;
+    left: 72%;
+  }
+  .topdressing-card .production__name {
+    max-width: 100%;
+  }
+  .topdressing-card .production__pack h4,
+  .topdressing-card .production__price h4 {
+    margin: 0;
+  }
+  .topdressing-card .production__pack p,
+  .topdressing-card .production__price p {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .topdressing-card .production__pack {
     margin-bottom: 20px;
   }
 }
