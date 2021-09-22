@@ -1,0 +1,43 @@
+.topdressing-description {
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__text {
+        margin: 0;
+        color: @greycolor;
+
+        span {
+            color: @greencolor;
+            font-weight: 600;
+        }
+
+        b {
+            color: @dark-greycolor;
+        }
+
+        &:nth-child(2) {
+            margin-top: 10px;
+        }
+
+        &:last-child {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .topdressing-description {
+        &__wrapper {
+            padding: 0;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &__text {
+            text-align: justify;
+        }
+    }
+}

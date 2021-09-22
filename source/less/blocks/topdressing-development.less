@@ -1,4 +1,4 @@
-.content-elems {
+.topdressing-development {
     
     &__wrapper {
         padding-left: 20px;
@@ -8,12 +8,7 @@
     &__text {
         color: @greycolor;
         margin-bottom: 20px;
-        line-height: 24px;
-
-        span {
-            color: @greencolor;
-            font-weight: 600;
-        }
+        margin-top: 30px;
     }
 
     &__image {
@@ -22,26 +17,31 @@
 }
 
 @media (min-width: @tablet-width) {
-    .content-elems {
+    .topdressing-development {
         &__image {
-            float: left;
             max-width: 280px;
-            margin-right: 20px;
-            margin-bottom: 100px;
-        }
-
-        &__text {
-            text-align: justify;
+            float: right;
+            margin-left: 10px;
         }
     }
 }
 
 @media (min-width: @desktop-width) {
-    .content-elems {
+    .topdressing-development {
         &__wrapper {
             padding: 0;
             max-width: 960px;
             margin: 0 auto;
+        }
+
+        &__text {
+            text-align: justify;
+            margin-top: 40px;
+        }
+
+        &__image {
+            max-width: 300px;
+            margin-left: 20px;
         }
     }
 }
