@@ -31,8 +31,8 @@ productionNav.addEventListener('click', function(evt) {
     subNavProduction.classList.toggle('subnav--show');
 });
 
-instructionButton.addEventListener('click', function(evt) {
-    evt.preventDefault();
+instructionButton.addEventListener('click', function(e) {
+    e.preventDefault();
 
     for (let i = 0; i < instructionItems.length; i++) {
         var element = instructionItems[i];
