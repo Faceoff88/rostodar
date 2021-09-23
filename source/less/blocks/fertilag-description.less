@@ -1,0 +1,89 @@
+.fertilag-description {
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__text {
+        color: @greycolor;
+
+        &:first-child {
+            margin-top: 30px;
+        }
+
+        .fert {
+            color: @redcolor;
+            font-weight: 600;
+        }
+
+        .rost {
+            color: @greencolor;
+            font-weight: 600;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__devs {
+        color: @greycolor;
+        
+        span {
+            color: @dark-greycolor;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .fertilag-description {
+
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__text {
+            text-align: justify;
+        }
+
+        &__image-block {
+            position: relative;
+            float: right;
+            max-width: 320px;
+            margin-left: 20px;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 40px;
+                border-radius: 50%;
+                background-color: @dark-greycolor;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+                filter: blur(20px);
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .fertilag-description {
+        &__wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        &__image-block {
+            max-width: 400px;
+            margin-bottom: 100px;
+            
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
