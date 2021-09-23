@@ -1,0 +1,155 @@
+.impact {
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        color: @greycolor;
+        margin: 0;
+
+        span {
+            color: @greencolor;
+            font-weight: 700;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 460px;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 30px;
+
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+        }
+
+        &::before {
+            content: '';
+            width: 300px;
+            height: 200px;
+            background-image: url("../img/dekor-kv-full.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        &:last-child {
+            flex-direction: column;
+            height: auto;
+            margin-top: 30px;
+            &::before {
+                content: none;
+            }
+
+            .impact__text {
+                background-color: transparent;
+                box-shadow: none;
+                height: auto;
+                
+                p {
+                    color: @greycolor;
+
+                    span {
+                        color: @greencolor;
+                        font-weight: 700;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__text {
+        width: calc(100% - 40px);
+        height: 260px;
+        background-color: @dark-greycolor;
+        border-radius: 15px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        padding: 20px;
+        padding-top: 0;
+
+        &-title {
+            color: #fff;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &-item  {
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 20px;
+            position: relative;
+            margin-left: 20px;
+
+            &::before {
+                content: '';
+                width: 22px;
+                height: 16px;
+                background-image: url("../img/verified.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50% 50%;
+                position: absolute;
+                top: 2px;
+                left: -27px;
+            }
+        }
+    }
+
+    &__result {
+        max-width: 100%;
+        position: relative;
+        top: -20px;
+    }
+
+    &__callback {
+        width: 260px;
+        height: 60px;
+        margin: 0 auto;
+        background-color: @redcolor;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        color: #fff;
+        text-transform: uppercase;
+        transition: ease-in-out 0.2s;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        outline: none;
+
+        &:hover,
+        &:focus {
+            background-color: #fff;
+            color: @redcolor;
+        }
+
+        &:active {
+            background-color: darken(#fff, 5%);
+            color: @redcolor;
+            box-shadow: none;
+        }
+    }
+}
