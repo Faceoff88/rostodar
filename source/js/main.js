@@ -22,7 +22,7 @@ productionNav.addEventListener('click', function(evt) {
     subNavProduction.classList.toggle('subnav--show');
 });
 
-instructionButton.addEventListener('click', function(e) {
+instructionButton.addEventListener('click', function(evt) {
     e.preventDefault();
 
     for (let i = 0; i < instructionItems.length; i++) {
