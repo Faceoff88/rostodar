@@ -10,6 +10,7 @@ var seedTreatment = document.querySelector('.seed-treatment');
 var growingseasonTreatment = document.querySelector('.growingseason-treatment');
 var instructionItems = document.querySelectorAll('.instruction__item');
 
+
 //var linkPr = document.querySelectorAll('a');
 
 /*for (let i = 0; i < linkPr.length; i++) {
@@ -31,9 +32,10 @@ productionNav.addEventListener('click', function(evt) {
 
 instructionButton.addEventListener('click', function(evt) {
     evt.preventDefault();
+
     for (let i = 0; i < instructionItems.length; i++) {
         var element = instructionItems[i];
-        var activeElement =  element.querySelector('.is-active');
+        var activeElement =  .querySelector('.is-active');
         if (activeElement = instructionItems[0]) {
             activeElement.classList.remove('is-active');
             instructionItems[1].classList.add('is-active');
@@ -44,7 +46,7 @@ instructionButton.addEventListener('click', function(evt) {
             activeElement.classList.remove('is-active');
             instructionItems[0].classList.add('is-active');
         } else {
-            activeElement = instructionItems[0];
+            instructionItems[0].classList.add('is active');
         }
     }
 })
