@@ -9,6 +9,7 @@ var soilTreatment = document.querySelector('.soil-treatment');
 var seedTreatment = document.querySelector('.seed-treatment');
 var growingseasonTreatment = document.querySelector('.growingseason-treatment');
 var instructionItems = document.querySelectorAll('.instruction__item');
+VAR instructionList = document.querySelector('.instruction__list);
 
 
 //var linkPr = document.querySelectorAll('a');
@@ -35,7 +36,7 @@ instructionButton.addEventListener('click', function(evt) {
 
     for (let i = 0; i < instructionItems.length; i++) {
         var element = instructionItems[i];
-        var activeElement =  .querySelector('.is-active');
+        var activeElement =  instructionList.querySelector('.is-active');
         if (activeElement = instructionItems[0]) {
             activeElement.classList.remove('is-active');
             instructionItems[1].classList.add('is-active');
