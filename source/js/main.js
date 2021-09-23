@@ -12,15 +12,6 @@ var instructionItems = document.querySelectorAll('.instruction__item');
 var instructionList = document.querySelector('.instruction__list);
 
 
-//var linkPr = document.querySelectorAll('a');
-
-/*for (let i = 0; i < linkPr.length; i++) {
-    const element = linkPr[i];
-    element.addEventListener('click', function(e) {
-        e.preventDefault();
-    })
-}*/
-
 navButton.addEventListener('click', function(evt) {
     menuShow.classList.toggle('page-nav__wrapper--show');
     svgBurger.classList.toggle('svg-show');
