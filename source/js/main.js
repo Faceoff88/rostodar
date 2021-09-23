@@ -5,12 +5,8 @@ var svgCross = document.querySelector('.page-nav__svg--cross');
 var productionNav = document.querySelector('.nav-list__item:nth-child(3)');
 var subNavProduction = document.querySelector('.subnav');
 var instructionButton = document.querySelector('.instruction__item-button');
-var soilTreatment = document.querySelector('.soil-treatment');
-var seedTreatment = document.querySelector('.seed-treatment');
-var growingseasonTreatment = document.querySelector('.growingseason-treatment');
 var instructionItems = document.querySelectorAll('.instruction__item');
-var instructionList = document.querySelector('.instruction__list);
-
+var instructionList = document.querySelector('.instruction__list');
 
 navButton.addEventListener('click', function(evt) {
     menuShow.classList.toggle('page-nav__wrapper--show');
@@ -23,22 +19,19 @@ productionNav.addEventListener('click', function(evt) {
 });
 
 instructionButton.addEventListener('click', function(evt) {
-    e.preventDefault();
-
+    evt.preventDefault();
+    var activeElement =  instructionList.querySelector('.is-active');
     for (let i = 0; i < instructionItems.length; i++) {
-        var element = instructionItems[i];
-        var activeElement =  instructionList.querySelector('.is-active');
-        if (activeElement = instructionItems[0]) {
-            activeElement.classList.remove('is-active');
+        if (activeElement == instructionItems[0]) {
+            instructionItems[0].classList.remove('is-active');
             instructionItems[1].classList.add('is-active');
-        } else if (activeElement = instructionItems[1]) {
-            activeElement.classList.remove('is-active');
+        } else if (activeElement == instructionItems[1]) {
+            instructionItems[1].classList.remove('is-active');
             instructionItems[2].classList.add('is-active');
-        } else if (activeElement = instructionItems[2]) {
-            activeElement.classList.remove('is-active');
+        } else if (activeElement == instructionItems[2]) {
+            instructionItems[2].classList.remove('is-active');
             instructionItems[0].classList.add('is-active');
-        } else {
-            instructionItems[0].classList.add('is active');
         }
-    }
+    } 
+
 })
