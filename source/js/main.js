@@ -9,7 +9,7 @@ var soilTreatment = document.querySelector('.soil-treatment');
 var seedTreatment = document.querySelector('.seed-treatment');
 var growingseasonTreatment = document.querySelector('.growingseason-treatment');
 var instructionItems = document.querySelectorAll('.instruction__item');
-VAR instructionList = document.querySelector('.instruction__list);
+var instructionList = document.querySelector('.instruction__list);
 
 
 //var linkPr = document.querySelectorAll('a');
