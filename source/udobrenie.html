@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>РОСТОДАР</title>
 </head>
 <body class="body">
@@ -81,7 +81,11 @@
                         удобрений <span>Ростодар</span> заключается в том, что температура производства препарата
                         не превышает 45 градусов, это позволяет выделить настоящее органическое вещество.
                     </p>
-                    <img src="./img/Humates.webp" alt="Гуматы" class="basic-substance__image">
+                    <picture>
+                        <source type="image/webp" srcset="img/Humates.webp">
+                        <source type="image/jpg" srcset="img/Humates.jpg">
+                        <img src="img/Humates.jpg" alt="Гуматы" class="basic-substance__image">
+                    </picture>
                 </div>
             </section>
              <section class="content-elems">
@@ -98,7 +102,11 @@
                         чего происходит дополнительное обогащение почвы гумусом и питательными веществами в доступной
                         для растений форме.
                     </p>
-                    <img src="./img/content-elems.webp" alt="Элементы" class="content-elems__image">
+                    <picture>
+                        <source type="image/webp" srcset="img/content-elems.webp">
+                        <source type="image/jpg" srcset="img/content-elems.jpg">
+                        <img src="img/content-elems.jpg" alt="Элементы" class="content-elems__image">
+                    </picture>
                  </div>
              </section>
              <section class="udobrenie-devs">
@@ -111,9 +119,11 @@
              </section>
              <section class="udobrenie-card">
                 <div class="production__item fertilizer">
-                    <div class="image">
-                        <img src="img/eurocub.webp" alt="Еврокуб">
-                    </div>
+                    <picture class="image">
+                        <source type="image/webp" srcset="img/eurocub.webp">
+                        <source type="image/png" srcset="img/eurocub.png">
+                        <img src="img/eurocub.png" alt="Еврокуб">
+                    </picture>
                     <div class="description">
                         <h3 class="production__name">Органо-минеральное удобрение</h3>
                         <div class="production__pack">
