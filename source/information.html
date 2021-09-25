@@ -150,8 +150,8 @@
                                 </ul>
                                 <picture>
                                     <source type="image/webp" srcset="img/box-vegetables.webp">
-                                    <source type="image/jpg" srcset="img/box-vegetables.jpg">
-                                    <img src="img/box-vegetables.jpg" alt="Ящик овощей" class="impact__result">
+                                    <source type="image/png" srcset="img/box-vegetables.png">
+                                    <img src="img/box-vegetables.png" alt="Ящик овощей" class="impact__result">
                                 </picture>
                             </div>
                         </li>
@@ -172,10 +172,10 @@
                     <div class="instruction__nav">
                         <h2 class="instruction__title">Инструкция</h2>
                         <ul class="instruction__nav-list">
-                            <li class="instruction__nav-item"><a href="#" class="instruction__nav-button">Овощи</a></li>
-                            <li class="instruction__nav-item"><a href="#" class="instruction__nav-button">Зерновые</a></li>
-                            <li class="instruction__nav-item"><a href="#" class="instruction__nav-button">Плодово-ягодные</a></li>
-                            <li class="instruction__nav-item"><a href="#" class="instruction__nav-button">Садовые растения</a></li>
+                            <li class="instruction__nav-item"><a href="#" data-parents="vegetable" class="instruction__nav-button">Овощи</a></li>
+                            <li class="instruction__nav-item"><a href="#" data-parents="crops" class="instruction__nav-button">Зерновые</a></li>
+                            <li class="instruction__nav-item"><a href="#" data-parents="fruit-berry" class="instruction__nav-button">Плодово-ягодные</a></li>
+                            <li class="instruction__nav-item"><a href="#" data-parents="garden-plants" class="instruction__nav-button">Садовые растения</a></li>
                         </ul>
                         <a href="#" class="instruction__item-button">
                             <svg width="35" hight="35" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -200,7 +200,7 @@
                             </svg>
                         </a>
                     </div>
-                    <ul class="instruction__list">
+                    <ul class="instruction__list" data-parents="crops">
                         <li class="instruction__item soil-treatment is-active">
                             <div class="instruction__item-title-wrapper">
                                 <h3 class="instruction__item-title">Обработка почвы</h3>
@@ -231,6 +231,113 @@
                                 - 1-е осенью совместно с инсектицидом для борьбы с переносчиками вирозов;
                                 - 2-е опрыскивание в фазу кущения - начала выхода в трубку;
                                 - 3-е опрыскивание в фазу цветения - начало молочной спелости;
+                                Рабочий раствор - 1,5 литра препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га. 
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="instruction__list" data-parents="vegetable">
+                        <li class="instruction__item soil-treatment is-active">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка почвы</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Обработка почвы осенью. Рабочий раствор - 7 литров препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га.
+                            </p>
+                            <p class="instruction__item-text">
+                                Обработка почвы весной (под предпосевную культивацию). Рабочий раствор - 2 литра препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га.
+                            </p>
+                        </li>
+                        <li class="instruction__item seed-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка семян</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Замачивание в течении 10-15 часов.
+                            </p>
+                            <p class="instruction__item-text">
+                                Рабочий раствор - 70-100мл препарата + вода до 10 литров. Расход рабочего раствора 1 л на 1 кг семян.
+                            </p>
+                        </li>
+                        <li class="instruction__item growingseason-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка в период вегетации</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                4-х кратная обработка:
+                                - 1-я в фазу появления 2-4 листьев;
+                                - 2-я в фазу бутонизации;
+                                - 3-я в фазу начала цветения;
+                                - 4-я в фазу плодоношения.
+                                Рабочий раствор - 1,5 литра препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га. 
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="instruction__list" data-parents="fruit-berry">
+                        <li class="instruction__item soil-treatment is-active">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка почвы</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Обработка междурядий весной. Рабочий раствор - 5 литров препарата + вода до 200 литров. Расход рабочего раствора 200л/Га
+                            </p>
+                        </li>
+                        <li class="instruction__item seed-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка семян</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Замачивание корней/черенков саженцев перед посадкой от 8 до 24 часов в зависимости от вида.
+                            </p>
+                            <p class="instruction__item-text">
+                                Рабочий раствор - 0.5 литра препарата + вода до 10 литров.
+                            </p>
+                        </li>
+                        <li class="instruction__item growingseason-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка в период вегетации</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                2х/4х кратная обработка в завасимости от вида.
+                                Рабочий раствор - 7-10 литров препарата + вода до 1000 литров.
+                                Расход рабочего раствора 1000л/Га. 
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="instruction__list" data-parents="garden-plants">
+                        <li class="instruction__item soil-treatment is-active">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка почвы</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Обработка почвы осенью. Рабочий раствор - 7 литров препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га.
+                            </p>
+                            <p class="instruction__item-text">
+                                Обработка почвы весной (под предпосевную культивацию). Рабочий раствор - 2 литра препарата + вода до 200 литров.
+                                Расход рабочего раствора 200 л/Га.
+                            </p>
+                        </li>
+                        <li class="instruction__item seed-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка семян</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                Рабочий раствор - 2 литра препарата + вода до 10 литров. Расход рабочего раствора 10л на одну тонну семян.
+                            </p>
+                        </li>
+                        <li class="instruction__item growingseason-treatment">
+                            <div class="instruction__item-title-wrapper">
+                                <h3 class="instruction__item-title">Обработка в период вегетации</h3>
+                            </div>
+                            <p class="instruction__item-text">
+                                3х кратное опрыскивание растений в период вегетации:
+                                - 1-е опрыскивание в фазу появления всходов/отрастания растений;
+                                - 2-е опрыскивание в фазу стеблевания;
+                                - 3-е опрыскивание в фазу бутонизации;
                                 Рабочий раствор - 1,5 литра препарата + вода до 200 литров.
                                 Расход рабочего раствора 200 л/Га. 
                             </p>
