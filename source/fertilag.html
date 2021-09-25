@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>РОСТОДАР</title>
 </head>
 <body class="body">
@@ -79,9 +79,11 @@
                         Компания Ростодар предлагает эффективный биологический метод
                         утилизации куриного помета и одновременно высокоэффективное органическое удобрение.
                     </p>
-                    <div class="fertilag-description__image-block">
-                        <img src="./img/chicken-manure-pellets.webp" alt="Гранулы" class="fertilag-description__image">
-                    </div>
+                    <picture class="fertilag-description__image-block">
+                        <source type="image/webp" srcset="img/chicken-manure-pellets.webp">
+                        <source type="image/jpg" srcset="img/chicken-manure-pellets.jpg">
+                        <img src="img/chicken-manure-pellets.jpg" alt="Гранулы" class="fertilag-description__image">
+                    </picture>
                     <p class="fertilag-description__text">
                         <span class="fert">Фертилаг</span> – удобрение с высоким содержанием азота, фосфора, калия, полным комплексом микроэлементов, усвояемых
                         растениями, и органической составляющей, которая способствует гумификации почвы. Благодаря особой технологии
@@ -96,9 +98,11 @@
             </section>
             <section class="fertilag-card">
                 <div class="production__item manure">
-                    <div class="image">
-                        <img src="img/eurocub.webp" alt="Еврокуб">
-                    </div>
+                    <picture class="image">
+                        <source type="image/webp" srcset="img/eurocub.webp">
+                        <source type="image/png" srcset="img/eurocub.png">
+                        <img src="img/eurocub.png" alt="Еврокуб">
+                    </picture>
                     <div class="description">
                         <h3 class="production__name">Фертилаг</h3>
                         <div class="production__pack">

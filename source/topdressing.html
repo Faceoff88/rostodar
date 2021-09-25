@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>РОСТОДАР</title>
 </head>
 <body class="body">
@@ -83,7 +83,11 @@
                         телят КРС, что проявляется в повышении сохранности поголовья и увеличению среднесуточного
                         прироста массы тела.
                     </p>
-                    <img src="./img/animals-dev.webp" alt="Животные" class="topdressing-development__image">
+                    <picture>
+                        <source type="image/webp" srcset="img/animals-dev.webp">
+                        <source type="image/png" srcset="img/animals-dev.png">
+                        <img src="img/animals-dev.png" alt="Животные" class="topdressing-development__image">
+                    </picture>
                 </div>
             </section>
             <section class="topdressing-description">
@@ -110,9 +114,11 @@
             </section>
             <section class="topdressing-card">
                 <div class="production__item feeding">
-                    <div class="image">
-                        <img src="img/eurocub.webp" alt="Еврокуб">
-                    </div>
+                    <picture class="image">
+                        <source type="image/webp" srcset="img/eurocub.webp">
+                        <source type="image/png" srcset="img/eurocub.png">
+                        <img src="img/eurocub.png" alt="Еврокуб">
+                    </picture>
                     <div class="description">
                         <h3 class="production__name">Органическая кормовая добавка</h3>
                         <div class="production__pack">
