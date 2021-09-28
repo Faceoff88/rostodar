@@ -13,7 +13,7 @@ formSubmit.addEventListener('click', function(evt) {
     const element = credentialsLabel[i];
     if (element.value == "") {
       modalFailure.classList.add('modal-failure--show');
-    } else {
+    } else if (credentialsLabel[0].value !== "" && credentialsLabel[1].value !== "" && credentialsLabel[2].value !== "") {
       modalSucces.classList.add('modal-succes--show');
     }
   }
