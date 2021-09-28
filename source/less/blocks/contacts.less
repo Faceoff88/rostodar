@@ -1,0 +1,156 @@
+.contacts-and-form__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 40px 20px 40px 20px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.contacts {
+  margin-bottom: 40px;
+
+  &__title {
+    display: inline-block;
+    font-size: 18px;
+    color: @dark-greycolor;
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: @greencolor;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+
+  .phone,
+  .mail {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-size: 14px;
+      color: @dark-greycolor;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: @greycolor;
+      margin-bottom: 10px;
+    }
+  }
+
+  .mail {
+    padding-top: 0;
+  }
+
+  .address {
+    &__title {
+      font-size: 14px;
+      color: @dark-greycolor;
+    }
+
+    &__text {
+      color: @greycolor;
+      max-width: 320px;
+    }
+  }
+
+  .socials {
+    &__vk,
+    &__instagram {
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      outline: none;
+      svg {
+        fill: @dark-greycolor;
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: @greencolor;
+        }
+      }
+
+      &:active {
+        svg {
+          fill: darken(@greencolor, 5%);
+        }
+      }
+    }
+
+    &__vk {
+      margin-right: 15px;
+    }
+  }
+
+  &__map {
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    z-index: 2;
+    border-top: 10px solid @greencolor;
+    border-bottom: 10px solid @greencolor;
+    width: 100%;
+    height: 450px;
+    margin-bottom: -80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-and-form__wrapper {
+    display: flex;
+
+    .contacts {
+      margin-right: 40px;
+
+      .phone,
+      .mail,
+      .address,
+      .socials {
+        margin-top: 30px;
+      }
+    }
+
+    .consultation {
+      width: 50%;
+      &__title {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .contacts-page {
+    height: calc(100vh - 250px);
+    position: relative;
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  }
+
+  .contacts-and-form__wrapper {
+    position: absolute;
+    width: 580px;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+
+  .contacts {
+    &__map {
+      margin-top: 80px;
+      height: 97%;
+    }
+  }
+}
