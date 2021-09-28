@@ -1,0 +1,119 @@
+.modal-succes {
+  display: none;
+  width: 320px;
+  position: fixed;
+  box-sizing: border-box;
+  box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: white;
+  z-index: 3;
+  text-align: center;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 25px;
+  min-height: 380px;
+}
+
+.modal-succes--show {
+  display: block;
+}
+
+.modal-succes__top {
+  padding: 50px 40px 33px 42px;
+  box-sizing: border-box;
+}
+
+.modal-succes__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal-succes__text {
+  width: 195px;
+  margin: 0 auto;
+}
+
+.modal-succes__button {
+    border: none;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: @greencolor;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: ease-in-out 0.2s;
+    margin: 35px auto;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: @greencolor;
+    }
+
+    &:active {
+      background-color: darken(#fff, 5%);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-succes {
+    width: 460px;
+    min-height: 370px;
+    padding-bottom: 0;
+  }
+
+  .modal-succes__bottom {
+    width: 100%;
+    min-height: 165px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+
+  .modal-succes__title {
+    font-size: 30px;
+    line-height: 40px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .modal-succes__text {
+    font-size: 18px;
+    width: 316px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-succes {
+    width: 780px;
+    min-height: 380px;
+  }
+
+  .modal-succes__title {
+    width: 400px;
+  }
+
+  .modal-succes__text {
+    font-size: 18px;
+    width: 510px;
+    margin: 0 auto;
+  }
+
+  .modal-succes__bottom {
+    margin-top: 32px;
+  }
+}

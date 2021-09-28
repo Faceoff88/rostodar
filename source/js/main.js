@@ -9,8 +9,6 @@ var instructionListShow = document.querySelector('.instruction__list--show');
 var instructionNavButtons = document.querySelectorAll('.instruction__nav-button');
 var instructionTextLists = document.querySelectorAll('.instruction__list');
 
-
-
 navButton.addEventListener('click', function(evt) {
     menuShow.classList.toggle('page-nav__wrapper--show');
     svgBurger.classList.toggle('svg-show');

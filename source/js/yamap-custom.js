@@ -3,8 +3,8 @@ ymaps.ready(function () {
       "map",
       {
         center: [54.254344, 35.609874],
-        zoom: 17,
-        controls: []
+        zoom: 15,
+        controls: ['zoomControl']
       },
       {
         searchControlProvider: "yandex#search"
@@ -39,19 +39,20 @@ ymaps.ready(function () {
           iconContentLayout: MyIconContentLayout
         }
       );
-  
+
     myMap.geoObjects.add(myPlacemarkWithContent);
-  
+
     function onResizeMap() {
       if (window.innerWidth < '660') {
         myMap.setCenter([54.254344, 35.609874]);
       } else if (window.innerWidth < '1200') {
-        myMap.setCenter([54.254344, 35.609874])
-      } else {
         myMap.setCenter([54.254344, 35.609874]);
+      } else {
+        myMap.setCenter([54.254344, 35.509874]);
+        myMap.setZoom(12);
       }
     } onResizeMap();
-  
+
     window.onresize = function () {
       onResizeMap();
     };

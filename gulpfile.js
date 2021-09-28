@@ -27,7 +27,7 @@ gulp.task("css", function () {
     ]))
         .pipe(sourcemap.write("."))
         .pipe(server.stream())
-        .pipe(gulp.dest("build/css"));
+        .pipe(gulp.dest("source/css"));
 });
 gulp.task("sprite", function() {
     return gulp.src("source/img/icon-*.svg*")
@@ -60,7 +60,7 @@ gulp.task("webp", function() {
 });
 gulp.task("server", function () {
     server.init({
-        server: "build/",
+        server: "source/",
         notify: false,
         open: true,
         cors: true,

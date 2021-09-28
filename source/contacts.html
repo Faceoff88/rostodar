@@ -66,9 +66,10 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main contacts-page">
         <div class="wrapper">
-            <section class="contacts">
+            <div class="contacts-and-form__wrapper">
+              <section class="contacts">
                 <div class="contacts__wrapper">
                     <h1 class="contacts__title">
                         Контакты
@@ -125,15 +126,15 @@
                             <ul class="credentials__list consultation__list">
                                 <li class="credentials__item">
                                     <label class="credentials__label"><span>Имя</span></label>
-                                    <input type="text" class="credentials-data" placeholder="Укажите Ваше имя *">
+                                    <input type="text" class="credentials__data" placeholder="Укажите Ваше имя *" required>
                                 </li>
                                 <li class="credentials__item">
                                     <label for="" class="credentials__label"><span>Телефон</span></label>
-                                    <input type="text" class="credentials-data" placeholder="Укажите Ваш телефон *">
+                                    <input type="text" class="credentials__data" placeholder="Укажите Ваш телефон *" required>
                                 </li>
                                 <li class="credentials__item">
                                     <label for="" class="credentials__label"><span>E-mail</span></label>
-                                    <input type="text" class="credentials-data" placeholder="Укажите Ваш E-mail *">
+                                    <input type="text" class="credentials__data" placeholder="Укажите Ваш E-mail *" required>
                                 </li>
                             </ul>
                         </div>
@@ -159,8 +160,9 @@
                     </form>
                 </div>
             </section>
+            </div>
         </div>
-        <div class="contacts__map" id="map" style="width: 90%; height: 640px;"></div>
+        <div class="contacts__map" id="map"></div>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
@@ -205,6 +207,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a36dbd7-5c91-4a91-bf6f-957ee9877949"></script>
     <script src="js/yamap-custom.js"></script>
 </body>
