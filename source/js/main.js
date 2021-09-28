@@ -43,31 +43,14 @@ for (let k = 0; k < instructionNavButtons.length; k++) {
                             instructionItems[2].classList.remove('is-active');
                             instructionItems[0].classList.add('is-active');
                         }
-                    } 
+                    }
                 })
             } else if (instructionNavButtons[k].dataset.parents !== instructionTextLists[y].dataset.parents) {
                 instructionTextLists[y].classList.remove('instruction__list--show');
                 instructionButton.classList.add('instruction__item-button--show');
             }
-            
+
         }
     })
-    
-}
 
-// instructionButton.addEventListener('click', function(evt) {
-//     evt.preventDefault();
-//     var activeElement =  instructionListShow.querySelector('.is-active');
-//     for (let i = 0; i < instructionItems.length; i++) {
-//         if (activeElement == instructionItems[0]) {
-//             instructionItems[0].classList.remove('is-active');
-//             instructionItems[1].classList.add('is-active');
-//         } else if (activeElement == instructionItems[1]) {
-//             instructionItems[1].classList.remove('is-active');
-//             instructionItems[2].classList.add('is-active');
-//         } else if (activeElement == instructionItems[2]) {
-//             instructionItems[2].classList.remove('is-active');
-//             instructionItems[0].classList.add('is-active');
-//         }
-//     } 
-// })
+}

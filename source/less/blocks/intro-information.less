@@ -27,3 +27,35 @@
         }
     }
 }
+
+@media (min-width: @tablet-width) {
+  .intro-information {
+    background-image: url("../img/intro-inform-bg-tablet.jpg");
+    height: 619px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 60px;
+      max-width: 480px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro-information {
+    background-image: url("../img/intro-inform-bg-desktop.jpg");
+    height: calc(100vh - 170px);
+
+    &__wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-top: 300px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      max-width: 820px;
+    }
+  }
+}
