@@ -20,7 +20,7 @@ ymaps.ready(function () {
           hintContent: "Собственный значок метки с контентом",
           balloonContent:
             "Ростодар - удобрение нового уровня",
-          iconContent: "12"
+          iconContent: ""
         },
         {
           // Опции.
