@@ -161,6 +161,57 @@
             </div>
         </div>
     </footer>
+    <section class="form-buy">
+      <div class="form-buy__wrapper">
+          <h2 class="form-buy__title">Заявка</h2>
+          <form action="" method="get" class="form-buy__form">
+              <div class="form-buy__credentials credentials">
+                  <ul class="credentials__list form-buy__list">
+                    <li class="credentials__item">
+                          <label class="credentials__label"><span>Продукт</span></label>
+                          <input type="text" class="credentials__data form-buy__product-name" placeholder="Продукт">
+                      </li>
+                      <li class="credentials__item">
+                          <label class="credentials__label"><span>Имя</span></label>
+                          <input type="text" class="credentials__data" placeholder="Укажите Ваше имя *" required>
+                      </li>
+                      <li class="credentials__item">
+                          <label for="" class="credentials__label"><span>Телефон</span></label>
+                          <input type="text" class="credentials__data" placeholder="Укажите Ваш телефон *" required>
+                      </li>
+                      <li class="credentials__item">
+                          <label for="" class="credentials__label"><span>E-mail</span></label>
+                          <input type="text" class="credentials__data" placeholder="Укажите Ваш E-mail *" required>
+                      </li>
+                  </ul>
+              </div>
+              <button type="submit" class="form-buy__submit">Заказать</button>
+              <button class="form-buy__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+                Закрыть
+              </button>
+          </form>
+          <div class="form-buy__modal-failure modal-failure">
+            <div class="modal-failure__top">
+                <h3 class="modal-failure__title">Что-то пошло не так!</h3>
+                <p class="modal-failure__text">Проверьте поля выделенные красным, скорее всего Вы забыли их заполнить</p>
+            </div>
+            <div class="modal-failure__bottom">
+                <button class="modal-failure__button">ОК</button>
+            </div>
+            </div>
+            <div class="form-buy__modal-succes modal-succes">
+                <div class="modal-succes__top">
+                    <h3 class="modal-succes__title">Ваша заявка отправлена</h3>
+                    <p class="modal-succes__text">Спасибо! Ваша заявка уже поступила к нам, в ближайшее время с Вами свяжется наш сотрудник</p>
+                </div>
+                <div class="modal-succes__bottom">
+                    <button class="modal-succes__button">Закрыть окно</button>
+                </div>
+            </div>
+      </div>
+    </section>
     <script src="js/main.js"></script>
+    <script src="js/form-buy.js"></script>
 </body>
 </html>

@@ -66,7 +66,7 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main information-page">
         <div class="wrapper">
             <section class="intro-information">
                 <div class="intro-information__wrapper">
@@ -160,12 +160,54 @@
                             <div class="impact__text">
                                 <p>
                                     Хотите узнать больше о благоприятном воздействии препарата <span>Ростодар</span> на
-                                    вочву и растения, <span>оставьте заявку</span> и мы обязательно Вам перезвоним!
+                                    почву и растения, <span>оставьте заявку</span> и мы обязательно Вам перезвоним!
                                 </p>
                             </div>
                         </li>
                     </ul>
                 </div>
+            </section>
+            <section class="consultation">
+              <div class="consultation__wrapper">
+                  <h2 class="consultation__title">Заказать консультацию</h2>
+                  <form action="" method="get" class="consultation__form">
+                      <div class="consultation__credentials credentials">
+                          <ul class="credentials__list consultation__list">
+                              <li class="credentials__item">
+                                  <label class="credentials__label"><span>Имя</span></label>
+                                  <input type="text" class="credentials__data" placeholder="Укажите Ваше имя *" required>
+                              </li>
+                              <li class="credentials__item">
+                                  <label for="" class="credentials__label"><span>Телефон</span></label>
+                                  <input type="text" class="credentials__data" placeholder="Укажите Ваш телефон *" required>
+                              </li>
+                              <li class="credentials__item">
+                                  <label for="" class="credentials__label"><span>E-mail</span></label>
+                                  <input type="text" class="credentials__data" placeholder="Укажите Ваш E-mail *" required>
+                              </li>
+                          </ul>
+                      </div>
+                      <button type="submit" class="consultation__submit">Заказать</button>
+                      <div class="consultation__modal-failure modal-failure">
+                          <div class="modal-failure__top">
+                              <h3 class="modal-failure__title">Что-то пошло не так!</h3>
+                              <p class="modal-failure__text">Проверьте поля выделенные красным, скорее всего Вы забыли их заполнить</p>
+                          </div>
+                          <div class="modal-failure__bottom">
+                              <button class="modal-failure__button">ОК</button>
+                          </div>
+                      </div>
+                      <div class="consultation__modal-succes modal-succes">
+                          <div class="modal-succes__top">
+                              <h3 class="modal-succes__title">Ваша заявка отправлена</h3>
+                              <p class="modal-succes__text">Спасибо! Ваша заявка уже поступила к нам, в ближайшее время с Вами свяжется наш сотрудник</p>
+                          </div>
+                          <div class="modal-succes__bottom">
+                              <button class="modal-succes__button">Закрыть окно</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
             </section>
             <section class="instruction">
                 <div class="instruction__wrapper">
@@ -390,5 +432,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/information-page-form.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
