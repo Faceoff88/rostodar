@@ -21,8 +21,9 @@
     border-radius: 15px;
     color: @greycolor;
     margin-top: 5px;
-    width: 80%;
+    width: 100%;
     outline: none;
+    box-sizing: border-box;
 
     &::placeholder {
       color: @greycolor;
@@ -122,15 +123,22 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .information-page {
     .consultation {
       max-width: 600px;
       margin: 0 auto;
 
+      &__list {
+        width: 100%;
+      }
+
       .credentials__data {
         width: 100%;
+      }
+
+      .credentials__item {
+        max-width: 100%;
       }
     }
   }
